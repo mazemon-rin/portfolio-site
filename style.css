@@ -22,3 +22,12 @@
 .work-can{color:var(--ink)!important;font-size:.8rem!important;margin-bottom:6px!important}.work-can b{color:var(--accent)}
 .recent-update{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-top:34px;padding-bottom:34px}.recent-update h2{font-size:1.6rem;margin:0}.recent-update p:not(.eyebrow){color:var(--muted);font-size:.84rem;margin:3px 0 0}.recent-update div:last-child{display:grid;gap:5px;padding:20px 24px;background:#f3e9d4;border-left:4px solid var(--accent)}.recent-update strong{font-size:1rem}.recent-update span{font-size:.8rem;color:var(--muted)}
 @media(max-width:800px){.recent-update{grid-template-columns:1fr;gap:15px}.recent-update div:last-child{padding:16px 18px}}
+
+/* Ver.1.2: 情報カードの読みやすさとスマホ表示を安定させる */
+.current-stats div{min-height:104px;display:flex;flex-direction:column;justify-content:center}
+.work-label{margin-bottom:12px}
+.recent-update-card{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.recent-update-card>div{display:grid;gap:5px;padding:20px 24px;background:#f3e9d4;border-left:4px solid var(--accent)}
+.recent-label{color:var(--accent)!important;font-weight:900;letter-spacing:.08em}
+@media(max-width:800px){.recent-update-card{grid-template-columns:1fr;gap:12px}.recent-update-card>div{padding:16px 18px}}
+@media(max-width:460px){.current-stats div{min-height:92px}.current-stats strong{white-space:nowrap}.work-body{min-width:0}.work-links{flex-wrap:wrap}}
