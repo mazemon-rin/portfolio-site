@@ -31,3 +31,16 @@
 .recent-label{color:var(--accent)!important;font-weight:900;letter-spacing:.08em}
 @media(max-width:800px){.recent-update-card{grid-template-columns:1fr;gap:12px}.recent-update-card>div{padding:16px 18px}}
 @media(max-width:460px){.current-stats div{min-height:92px}.current-stats strong{white-space:nowrap}.work-body{min-width:0}.work-links{flex-wrap:wrap}}
+
+/* 開発ログ: 更新日・次の作業・関連リンクを追加しやすくする */
+.journal-note{color:var(--muted);font-size:.8rem}
+.journal-content{min-width:0}
+.journal-date strong{font-size:1.2rem;white-space:nowrap}
+.journal-date span{display:block;margin-top:4px}
+.journal-next{margin-top:18px;padding:14px 16px;background:#f3e9d4;border-left:3px solid var(--accent)}
+.journal-next strong,.journal-related strong{display:block;color:var(--accent);font-size:.78rem;margin-bottom:4px}
+.journal-next ul{margin:0;padding-left:1.2em;color:var(--muted);font-size:.82rem}
+.journal-related{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:16px;font-size:.78rem}
+.journal-related strong{margin:0 4px 0 0}
+.journal-related a{color:var(--accent);font-weight:700;border-bottom:1px solid currentColor}
+@media(max-width:460px){.journal-note{display:block;margin-top:-8px}.journal-date strong{font-size:1rem}.journal-date span{font-size:.68rem}.journal-related{display:grid;gap:7px}.journal-related strong{margin:0}}
