@@ -44,3 +44,8 @@
 .journal-related strong{margin:0 4px 0 0}
 .journal-related a{color:var(--accent);font-weight:700;border-bottom:1px solid currentColor}
 @media(max-width:460px){.journal-note{display:block;margin-top:-8px}.journal-date strong{font-size:1rem}.journal-date span{font-size:.68rem}.journal-related{display:grid;gap:7px}.journal-related strong{margin:0}}
+
+/* 開発ログの日付: 日付をtime要素1つで表示 */
+.journal-date{display:block;min-width:120px;white-space:nowrap;color:var(--accent);font-size:.9rem;font-weight:700;letter-spacing:.04em;text-align:center;border-right:1px solid var(--line);padding-right:18px}
+.journal-date strong,.journal-date span{display:none}
+@media(max-width:600px){.journal-entry{display:block}.journal-date{min-width:0;border-right:0;border-bottom:1px solid var(--line);padding:0 0 12px;margin-bottom:18px;text-align:left}.journal-content{min-width:0}.journal-content h3{overflow-wrap:anywhere}.journal-related{display:grid;gap:7px}.circle-arrow{margin:18px 0 0 auto}}
