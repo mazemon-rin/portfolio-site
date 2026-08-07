@@ -51,3 +51,26 @@
 .journal-date{display:block;min-width:120px;white-space:nowrap;color:var(--accent);font-size:.9rem;font-weight:700;letter-spacing:.04em;text-align:center;border-right:1px solid var(--line);padding-right:18px}
 .journal-date strong,.journal-date span{display:none}
 @media(max-width:600px){.journal-entry{display:block}.journal-date{min-width:0;border-right:0;border-bottom:1px solid var(--line);padding:0 0 12px;margin-bottom:18px;text-align:left}.journal-content{min-width:0}.journal-content h3{overflow-wrap:anywhere}.journal-related{display:grid;gap:7px}.circle-arrow{margin:18px 0 0 auto}}
+
+/* ホバー時に選択中のカードが分かる、やさしい色変化 */
+.current-stats div,.work-card,.now-card,.journal-entry,.article-list article{transition:background-color .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.current-stats div:nth-child(1):hover,.current-stats div:nth-child(1):focus-within{background:#eef7fa}
+.current-stats div:nth-child(2):hover,.current-stats div:nth-child(2):focus-within{background:#fff4e8}
+.current-stats div:nth-child(3):hover,.current-stats div:nth-child(3):focus-within{background:#eef6ed}
+.current-stats div:nth-child(4):hover,.current-stats div:nth-child(4):focus-within{background:#f2edf8}
+.work-card:hover,.work-card:focus-within{border-color:var(--card);box-shadow:0 8px 22px rgba(39,50,48,.1);transform:translateY(-2px)}
+.work-blue:hover .work-body,.work-blue:focus-within .work-body{background:#eef7fa}
+.work-orange:hover .work-body,.work-orange:focus-within .work-body{background:#fff4e8}
+.work-green:hover .work-body,.work-green:focus-within .work-body{background:#eef6ed}
+.work-purple:hover .work-body,.work-purple:focus-within .work-body{background:#f2edf8}
+.now-card:hover,.now-card:focus-within{border-color:var(--accent);box-shadow:0 6px 18px rgba(39,50,48,.08);transform:translateY(-2px)}
+.now-theme:hover,.now-theme:focus-within{background:#f8e8cf}
+.journal-entry:hover,.journal-entry:focus-within{background:#fffdf8;border-color:var(--accent)}
+.article-list article:hover,.article-list article:focus-within{background:#f3f7f7;padding-left:10px;padding-right:10px}
+.button,.text-link,.social-links a,.circle-arrow{transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+.button:hover,.button:focus-visible{transform:translateY(-2px)}
+.text-link:hover,.text-link:focus-visible{color:var(--accent)}
+ :focus-visible{outline:3px solid rgba(229,121,82,.45);outline-offset:4px}
+.app-update{display:grid;gap:2px;margin:10px 0 14px;padding:9px 11px;background:#f7f5ef;border-left:3px solid var(--card);color:var(--muted);font-size:.72rem;line-height:1.55}
+.app-update span:first-child{font-weight:700;color:var(--ink)}
+@media(max-width:460px){.app-update{font-size:.68rem;margin:9px 0 12px;padding:8px 10px}}
